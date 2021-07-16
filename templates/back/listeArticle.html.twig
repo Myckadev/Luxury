@@ -1,0 +1,46 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}{{ parent() }} Liste des Articles{% endblock %}
+{% block TitrePage %}Administration | Liste des articles{% endblock %}
+{% block body %}
+    {% for message in app.flashes('success') %}
+        <div class="row mt-4 justify-content-center">
+            <div class="alert alert-success col-md-6">{{ message }}</div>
+        </div>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+        <div class="row mt-4 justify-content-center">
+            <div class="alert alert-danger col-md-6">{{ message }}</div>
+        </div>
+    {% endfor %}
+    <table class="table table-hover" >
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nom</th>
+                <th>Catégorie</th>
+                <th>Prix</th>
+                <th>Image</th>
+                <th>Description</th>
+                <th colspan="2" style="text-align: center"> Action</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for article in articles %}
+                <tr>
+                    <td>{{ article.id }}</td>
+                    <td>{{ article.nom }}</td>
+                    <td>{{ article.categori.nom }}</td>
+                    <td>{{ article.prix }}€</td>
+                    <td><img height="40" width="40" src="{{ asset('upload/') }}{{ article.picture }}" alt="Image de l'article"></td>
+                    <td>{{ article.description }}</td>
+                    <td><a class="btn btn-primary" href="{{ path('editArticle', {'id': article.id}) }}">Éditer</a></td>
+                    <td><a class="btn btn-danger" href="{{ path('delArticle', {'id': article.id}) }}">Supprimer</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
+

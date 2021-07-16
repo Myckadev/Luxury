@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ parent() }} Panier{% endblock %}
+{% block TitrePage %}
+    {% if panier is empty%}
+        Votre Panier est vide
+    {% else %}
+        Votre Panier
+    {% endif %}
+{% endblock %}
+{% block body %}
+    <table class="table" >
+        <thead>
+        <tr style="text-align: center">
+            <th>Nom de l'article</th>
+            <th colspan="3"> Quantité</th>
+            <th colspan="2">Prix Quantité</th>
+            <th>Action</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody style="text-align: center" >
+        {% for item in panier %}
+            <tr>
+                <td>{{ item.article.nom }}</td>
+                <td class="d-flex" style="text-align: center; margin: 0 auto">
+                    <a class="btn btn-primary" href="{{ path('removePanier', {'id': item.article.id}) }}">-</a>
+                </td>
+                <td><button type="button" class="btn btn-outline-secondary">{{ item.qtt }}</button></td>
+                <td><a class="btn btn-primary" href="{{ path('plusPanier', {'id': item.article.id}) }}">+</a></td>
+
+                <td colspan="2">{{ item.totalByArticle }} €</td>
+                <td>
+                    <a class="btn btn-danger" href="{{ path('deleteArticleFromPanier', {'id': item.article.id}) }}"><i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        {% endfor %}
+            <tr>
+                {% if not panier is empty%}
+                    <td><a class="btn btn-danger" href="{{ path('clearPanier') }}"><i class="fas fa-trash-alt"></i> Vider le panier</a></td>
+                    <td colspan="6"></td>
+                {% endif %}
+            </tr>
+            <tr>
+                <td colspan="5"></td>
+                <td style="text-align: center; margin: 0 auto">Total : {{ total }} €</td>
+                {% if panier is empty%}
+                    <td><a class="btn btn-success" href="{{ path('home') }}"><i class="fas fa-plus"></i> </i> Remplir le panier</a></td>
+                {% else %}
+                    {% if not app.user %}
+                        <td><a class="btn btn-success" href="{{ path('register') }}"><i class="fas fa-cart-arrow-down"></i> Confirmer la commande</a></td>
+                    {% else %}
+                        <td><a class="btn btn-success" href="{{ path('confirmCommand') }}"><i class="fas fa-cart-arrow-down"></i> Confirmer la commande</a></td>
+                    {% endif %}
+                {% endif %}
+
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
+
+
+

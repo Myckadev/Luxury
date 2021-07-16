@@ -1,0 +1,40 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}{{ parent() }}Ajout Article{% endblock %}
+
+{% block TitrePage %}Administration | Ajout d'un Article{% endblock %}
+{% block body %}
+    {#{{ form(form) }}#}{# génère l'intégralité du formulaire#}
+    {{ form_start(form) }}
+
+    <label for="">Nom de l'article</label>
+    {{ form_row(form.nom) }}
+    <label for="">Catégorie de l'article</label>
+    {{ form_row(form.categori) }}
+    <label for="">Prix de l'article</label>
+    {{ form_row(form.prix) }}
+    <label for="">Photo de l'article</label>
+
+    {{ form_row(form.picture, { 'attr':{"onChange": "loadFile(event)"} }  ) }}
+    <div class="col-md-12 text-center">
+
+        <img id="image" style='width:300px; margin-bottom: 15px;'>
+
+    </div>
+
+    {{ form_row(form.description) }}
+    {{ form_row(form.Save) }}
+    {{ form_end(form) }}
+
+
+    <script>
+
+        const loadFile = function (event) {
+            let image = document.getElementById('image');
+
+            image.src = URL.createObjectURL(event.target.files[0]);
+        };
+
+    </script>
+
+{% endblock %}
+

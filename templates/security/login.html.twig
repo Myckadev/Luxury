@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    {{ parent() }}Connexion
+{% endblock %}
+
+{% block TitrePage %}
+    Compte | Connexion
+{% endblock %}
+
+{% block body %}
+    <div class="row justify-content-center mt-4">
+        <div class="col-md-6">
+
+            <form method="post" action="{{ path('login') }}">
+                <div class="mb-3">
+                    <label for="email">E-Mail</label>
+                    <input class="form-control" type="email" id="email" placeholder="Saisir votre e-mail" name="_username">
+                    <p>Aucun e-mail n'est transmis à aucun organisme tiers.</p>
+                </div>
+                <div class="mb-3">
+                    <label for="password">Mot de passe</label>
+                    <input class="form-control" type="password" id="password" placeholder="Saisir votre mot de passe" name="_password">
+                    <a href="{{ path('forgotPassword') }}">Mot de passe oublié</a>
+                </div>
+                <button class="btn btn-primary" type="submit">Connexion</button>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+

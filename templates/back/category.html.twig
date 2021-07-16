@@ -1,0 +1,17 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}
+    {{ parent() }} Ajout Catégorie
+{% endblock %}
+{% block TitrePage %}
+    Administration | Ajout d'une catégorie
+{% endblock %}
+{% block body %}
+    {{ form_start(form) }}
+    <label for="">Nom de la catégorie</label>
+    {{ form_row(form.nom) }}
+    {{ form_row(form.Save) }}
+    {{ form_end(form) }}
+{% endblock %}
+
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PS-211.7628.25">
+    <data-source name="bijoux@127.0.0.1" uuid="57da2c39-bbbf-49e9-a891-9093993ab5b3">
+      <database-info product="MariaDB" version="10.4.19-MariaDB" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.7.3" dbms="MARIADB" exact-version="10.4.19" exact-driver-version="2.7">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-mapping>
+        <introspection-scope>
+          <node kind="schema" qname="@" />
+        </introspection-scope>
+      </schema-mapping>
+    </data-source>
+  </component>
+</project>

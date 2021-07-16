@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ parent()}} Accueil{% endblock %}
+{% block body %}
+    <h1 style="text-align: center; margin-bottom: 50px">Bienvenue sur votre boutique Luxury en ligne !</h1>
+    <div class="row justify-content-between">
+        {% for article in articles %}
+            <div class="col-md-4" >
+                <div class="card mb-3" style="max-height: 610px; min-height: 610px">
+                    <h3 class="card-header">{{ article.nom }}</h3>
+                    <div class="card-body d-flex justify-content-between">
+                        <span><span class="card-title">Prix : </span><span class="card-subtitle text-muted"> {{ article.prix }} €</span></span><span><span class="card-title">Type : </span><span class="card-subtitle text-muted"> {{ article.categori.nom }}</span></span>
+
+                    </div>
+                    <img src="{{ asset('upload/') }}{{ article.picture }}" alt="" style="max-height: 300px; max-width: 300px; margin: 0 auto; min-height: 100px; min-width: 100px">
+                    <div class="card-body">
+                        <p class="card-text">{{article.description}}</p>
+                    </div>
+                    <div class="card-body">
+
+                            <a href="{{ path('addPanier', {'id': article.id}) }}" class="btn-primary btn">+ Ajouter au Panier</a>
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+

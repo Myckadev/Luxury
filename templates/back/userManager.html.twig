@@ -1,0 +1,36 @@
+{% extends 'baseBack.html.twig' %}
+{% block title %}{{ parent() }} Gestionnaire d'utilisateur{% endblock %}
+{% block TitrePage %}Utilisateur | Gestionnaire de permission{% endblock %}
+{% block body %}
+    <table class="table" style="margin-top: 50px">
+        <thead>
+        <tr style="text-align: center">
+            <th>Nom de l'utilisateur</th>
+            <th >Email</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Rôle</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody style="text-align: center" >
+        {% for user in users %}
+            <tr>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.nom }}</td>
+                <td>{{ user.prenom }}</td>
+                <td>{{ user.roles[0] }}</td>
+                {% if  user.roles[0] == 'ROLE_ADMIN' %}
+                    <td><button class="btn btn-success">Changer le rôle pour : Utilisateur</button></td>
+                {% else %}
+                    <td><button class="btn btn-danger">Changer le rôle pour : Administrateur</button></td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+
+
