@@ -1,81 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="688bb4ac-8fc7-4f7a-9ce7-0f806dd3a2ac" name="Default Changelist" comment="test">
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/swiftmailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210707134025.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210708114832.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210708114952.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210708115008.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210708115054.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070811315460e6c60a2e3d0bague4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070811341160e6c693080e0boucle1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070812160860e6d06835c59collier3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070814092360e6eaf3d6d73collier3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070814100660e6eb1ea23cdboucle1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815040660e6f7c66c822bague1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815095460e6f92229ac2bague4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815130260e6f9de26fb9bracelet5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815144660e6fa463f652bague1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815280860e6fd6875448bague4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815300760e6fddf2af72collier3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815311360e6fe216dd3dcollier3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070815492260e702621e941bague2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070817434260e71d2e11f8emontre2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021070819165260e7330496203collier5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/2021071015145160e99d4b3ad2cmontre2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/bijoux-pierre.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/upload/mailogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BackController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Achat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Category.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Commande.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/CategoryType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AchatRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CategoryRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CommandeRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/Panier/PanierService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/addArticle.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/category.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/editArticle.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/gestionCommande.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/listeArticle.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/listeCategory.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/back/userManager.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/baseBack.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/home.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/listeCommandes.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/showPanier.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mail/mailForm.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/mail/mailTemplate.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/forgotPassword.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/registration.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/resetPassword.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/test/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/bijoueterie.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bijoueterie.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-    </list>
+    <list default="true" id="688bb4ac-8fc7-4f7a-9ce7-0f806dd3a2ac" name="Default Changelist" comment="test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -311,6 +237,7 @@
       <workItem from="1626255291500" duration="680000" />
       <workItem from="1626333383919" duration="5129000" />
       <workItem from="1626373331788" duration="654000" />
+      <workItem from="1626433455685" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1625662226787</created>

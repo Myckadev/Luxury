@@ -90,5 +90,5 @@ class Achat
         return $this->totalByArticle;
     }
 
-
+    //test
 }
