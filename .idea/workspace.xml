@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="688bb4ac-8fc7-4f7a-9ce7-0f806dd3a2ac" name="Default Changelist" comment="test" />
+    <list default="true" id="688bb4ac-8fc7-4f7a-9ce7-0f806dd3a2ac" name="Default Changelist" comment="test2">
+      <change afterPath="$PROJECT_DIR$/public/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BackController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BackController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +26,14 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0c2346ef-6618-49a4-9b0f-7944e594650c" />
+        <option name="url" value="git@github.com:bloutime/bijoux.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -173,10 +186,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/console" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="settings.editor.selected.configurable" value="Symfony2.SettingsForm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -237,7 +250,16 @@
       <workItem from="1626255291500" duration="680000" />
       <workItem from="1626333383919" duration="5129000" />
       <workItem from="1626373331788" duration="654000" />
-      <workItem from="1626433455685" duration="310000" />
+      <workItem from="1626433455685" duration="1746000" />
+      <workItem from="1626789171156" duration="59000" />
+      <workItem from="1627032380067" duration="4084000" />
+      <workItem from="1627134145591" duration="689000" />
+      <workItem from="1627285115659" duration="34000" />
+      <workItem from="1628000698402" duration="784000" />
+      <workItem from="1628168001845" duration="830000" />
+      <workItem from="1629203870477" duration="34000" />
+      <workItem from="1629214575413" duration="89000" />
+      <workItem from="1630599419880" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1625662226787</created>
@@ -246,7 +268,21 @@
       <option name="project" value="LOCAL" />
       <updated>1625662226787</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="test">
+      <created>1626433785945</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1626433785945</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test2">
+      <created>1626433824796</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1626433824796</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -267,7 +303,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

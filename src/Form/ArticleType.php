@@ -52,7 +52,7 @@ class ArticleType extends AbstractType
                     'attr'=>[
                         'placeholder'=>"Description de l'article (max 2000 caractères)",
                         'max_length'=>2000,
-                        'rows'=>10
+                        
                     ]
                 ])
                 ->add('Save', SubmitType::class)

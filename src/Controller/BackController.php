@@ -322,7 +322,6 @@ class BackController extends AbstractController
         return $this->redirectToRoute('gestionCommande');
     }
 
-
     /**
      * @Route("/userManager", name="userManager")
      */
